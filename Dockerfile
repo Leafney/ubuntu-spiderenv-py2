@@ -12,6 +12,7 @@ RUN apt-get -y install python python-dev python-pip curl unzip sqlite3 && \
 	pip install lxml && \
 	apt-get -y install build-essential chrpath libssl-dev libxft-dev && \
 	apt-get -y install libfreetype6 libfreetype6-dev libfontconfig1 libfontconfig1-dev && \
+	apt-get -y install libffi-dev && \
 	mkdir -p /etc/supervisor/conf.d && \
 	mkdir -p /app
 
