@@ -6,6 +6,8 @@ SUPER_ADMIN_NAME=${SUPER_ADMIN_NAME:-"user"}
 SUPER_ADMIN_PWD=${SUPER_ADMIN_PWD:-"123456"}
 CONFIG_DIR=${CONFIG_DIR:-"config"}
 
+# remove tmp files
+rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 super_file="/etc/supervisor/supervisord.conf"
 if [ -f "$super_file" ]; then

@@ -13,8 +13,7 @@ RUN apt-get -y install python python-dev python-pip curl unzip sqlite3 && \
 	apt-get -y install build-essential chrpath libssl-dev libxft-dev && \
 	apt-get -y install libfreetype6 libfreetype6-dev libfontconfig1 libfontconfig1-dev && \
 	mkdir -p /etc/supervisor/conf.d && \
-	mkdir -p /app && \
-	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+	mkdir -p /app
 
 COPY ./requirements.txt /
 RUN pip install --upgrade pip && \
